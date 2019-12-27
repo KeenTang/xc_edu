@@ -1,4 +1,4 @@
-package com.xuecheng.api.cms;
+package com.xuecheng.manage.cms.service;
 
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
@@ -11,10 +11,11 @@ import com.xuecheng.framework.model.response.QueryResponseResult;
  *
  * @author: keen
  * Date: 2019-12-15
- * Time: 14:13
+ * Time: 18:20
  */
-public interface CmsPageControllerApi {
-    QueryResponseResult findList(Integer page, Integer size, QueryPageRequest queryPageRequest);
+public interface PageService {
+    QueryResponseResult findList(Integer page, Integer size,QueryPageRequest queryPageRequest);
+
 
     CmsPageResult add(CmsPage cmsPage);
 }
