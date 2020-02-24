@@ -13,3 +13,12 @@ spring:
 security:
   basic:
     enabled: false
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:60010/eureka/,http://localhost:60011/eureka/
+  instance:
+    prefer-ip-address: true
